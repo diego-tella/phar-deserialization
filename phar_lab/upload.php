@@ -14,10 +14,10 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
   
 }
 if (move_uploaded_file($file["tmp_name"], "$dir/".$file["name"])) { 
-    echo "Arquivo enviado com sucesso!"; 
-    echo "<a href='includeimg.php?file=".$dir.$file["name"]."'>Clique aqui para ver</a>";
+    echo "File uploaded successfully! "; 
+    echo "<a href='includeimg.php?file=".$dir.$file["name"]."'>Click here to see the file</a>";
 } 
 else { 
-    echo "Erro, o arquivo n&atilde;o pode ser enviado."; 
+    echo "Error, the file could not be uploaded"; 
 }           
 ?>
